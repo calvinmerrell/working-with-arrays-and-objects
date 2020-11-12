@@ -23,6 +23,7 @@ var carDetails = {
 
 //Code Here
 
+const {color, make, model, year} = carDetails;
 
 
 ////////// PROBLEM 2 //////////
@@ -36,6 +37,8 @@ var carDetails = {
 function greeting( obj ) {
   //Code Here
   
+  const {firstName, lastName, title} = obj; 
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,7 +57,11 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function totalPopulation(obj) {
+    
+  const {utah, california, texas, arizona} = obj;
+  return(utah + california + texas + arizona);
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -68,7 +75,11 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function ingredients (obj) {
+  const {carb,fat,protein} = obj;
+  Array.push(carb,fat,protein);
+  return (array)
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -86,7 +97,9 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function largeNumbers({first,second,third}){
+  Math.min(...largeNumbers)
+}
 
 
 ////////// PROBLEM 6 //////////
@@ -98,5 +111,6 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+function numberGroups ({a,b,c}){}
+// my thought is to set up something to find the length of the first array and then compair it to the next array and keep the larger. 
+// that would some how be on a loop that would do that for all the arrays. 
